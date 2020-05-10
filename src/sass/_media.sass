@@ -41,26 +41,60 @@
         padding: 21px 0 60px 0
     .advantages
        &__wrapper
-           flex-direction: column   
+           flex-direction: column  
+    .consultation
+        padding: 80px 0 80px 0 
+        &__descr
+            text-align: center
+    .title
+        &_left
+            text-align: center
+    .feed-form
+        margin: 0 auto
+        margin-top: 30px
+
 @media (max-width: 575px)
     .header
+        display: flex
+        align-items: centre
+        justify-content: space-between
         &__official
-            font-size: 8px
+            display: none
     .promo
-        &__wrapper
-        display: flex 
-        align-items: centre 
-        justify-content: centre 
-        &__icons
-            width: 500px
+        &__header
+            text-align: center
+            margin-bottom: 15px
+        &__subheader
+            text-align: center
         &__link
             display: block
             margin: 0 auto 
+            margin-top: 20px
+        &__wrapper
+            display: flex
+            justify-content: start
+            align-items: start
+        &__icons
+            display: flex
+            flex-direction: column 
+            justify-content: center
+            align-items: center
+            margin-top: 40px
+            width: 100%
+        &__icon
+            width: 130px
+            display: block
             margin-top: 20px
     .button_main
         display: block
         margin: 0 auto
         margin-top: 65px
+    .title
+        &_left
+            text-align: center
+        font-size: 25px
+    .advantages
+        padding: 20px 0 20px 0
 @media (max-width: 320px)
     .header
         display: flex
@@ -68,25 +102,17 @@
         justify-content: space-between
         &__logo
             width: 150px
-        &__official
-            display: none
         &__phone
             font-size: 10px
             margin: 0 auto
         &__contacts
-            padding-right: 200px
+            margin-bottom: 20px
             .button
-                width: 130px
+                width: 120px
     .button_main
         margin-left: 60px
         width: 200px
     .promo
-        
-        
-        &__wrapper
-            display: flex
-            justify-content: start
-            align-items: start
         &__link
             margin-left: 60px
         &__header
@@ -94,18 +120,27 @@
             display: block
             text-align: center
             margin-left: 5px
+            margin-top: -30px
         &__subheader
             display: block
-            width: 300px
+            width: 100%
             text-align: center
         &__icons
-            display: flex
-            flex-direction: column 
-            justify-content: center
-            align-items: center
-               
+            width: 100%
     .title
-        font-size: 28px
+        font-size: 20px
+        &_left
+            font-size: 25px
+    .consultation
+        padding: 70px 0 70px 0
+        &__descr 
+            font-size: 17px
+    .feed-form
+        width: 250px
+        input
+            height: 45px
+
+
         
 
 
