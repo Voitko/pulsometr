@@ -1,19 +1,17 @@
 $(document).ready(function(){
-    $('.carousel__inner').slick(
-      {
-        speed: 300,
-        /* adaptiveHeight: true, */
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="img/arrow_right.png"></button>',
-        responsive: [ 
+  $('.carousel__inner').slick({
+      speed: 1200,
+      adaptiveHeight: true,
+      prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow.png"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="img/arrow_right.png"></button>',
+      responsive: [
           {
-              breakpoint: 768,
+              breakpoint: 992,
               settings: {
-              dots: true
-              arrows: false
-            }  
-                    
-        ]
-
-      });
-  }); 
+                  dots: true,
+                  arrows: false
+              }
+          }
+      ]
+  });  
+  
