@@ -75,7 +75,7 @@
                 color: $main-color
         hr
             background-color: #e8e8e8
-            margin-top: 19px
+            margin-top: 20px
             margin-bottom: 21px
             border-bottom: none /** останется граница только сверху и полоска как и нужно будет 1 пиксель **/
         &__footer
@@ -97,7 +97,7 @@
         &__content
             width: 50%
             margin-right: 0px
-            transform: translateX(-100%) 
+            transform: translateX(-120%) 
             transition: 0.5s all
             &_active
                 transform: translateX(0%) /** то есть он будет стоять на своем месте **/
@@ -115,12 +115,16 @@
             &_active
                 transform: translateX(-100%) 
                 margin-left: 0px
+        &__ul
+            list-style-type: none
+            padding-inline-start: 0
+            margin-top: 15px   
             li
                 position: relative
                 font-size: 14px
                 font-weight: 300
                 color: #555555
-                margin-bottom: 20px
+                margin-bottom: 25px
                 &::before
                     content: " "
                     position: absolute 
@@ -131,7 +135,7 @@
                     top: 7px
         &__back 
             position: absolute
-            bottom: 0
+            bottom: 10px
             left: 50%
             transform: translateX(calc(-50% - 19px))
             display: block

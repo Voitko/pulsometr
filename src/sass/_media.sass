@@ -44,8 +44,12 @@
         img
             width: 150px
             height: 150px
+    .pageup
+        right: 20px
        
 @media (max-width: 767px)
+    .container
+        margin: 0 40px
     .header
         &__logo
             width: 200px
@@ -106,6 +110,9 @@
             width: 400px
     iframe
         height: 550px
+    .modal
+        &_mini
+            min-height: 80px
 
 
 @media (max-width: 575px)
@@ -181,7 +188,7 @@
             font-size: 25px
         &-item
             &__link
-                margin-bottom: 0px
+                margin-bottom: 10px
     .feed
         padding-bottom: 50px
         &__item
@@ -219,6 +226,8 @@
         &__close
             font-size: 30px
             right: 8px
+        &_mini
+            min-height: 60px
     .feed-form
         width: 230px
         input
@@ -227,9 +236,23 @@
     button
         &_submit
             font-size: 14px
-       
+    .pageup
+        right: 5px
+        img
+            width: 35px
+            height: 35px
             
 @media (max-width: 320px)
+    body
+        .catalog-item
+            &__content
+                line-height: 1.7
+                &_active
+                    margin-right: 15px
+            &__ul
+                margin-top: 10px
+            &__back
+                bottom: -10px
     .container
         margin: 0 
     .header
@@ -296,6 +319,7 @@
             margin-top: 15px
         .container
             margin: 0 20px
+        
     .footer
         min-height: 520px
         &__social-item
